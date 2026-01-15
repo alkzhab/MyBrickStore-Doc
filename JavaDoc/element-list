@@ -1,0 +1,9 @@
+fr.univ_eiffel.legotools
+fr.univ_eiffel.legotools.factory
+fr.univ_eiffel.legotools.factory.api
+fr.univ_eiffel.legotools.factory.impl
+fr.univ_eiffel.legotools.factory.security
+fr.univ_eiffel.legotools.image
+fr.univ_eiffel.legotools.model
+fr.univ_eiffel.legotools.paving
+fr.univ_eiffel.legotools.scripts

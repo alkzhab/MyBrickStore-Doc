@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentation technique centralisée pour le projet MyBrickStore (SAE).">
+    <title>Documentation Technique - MyBrickStore</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-content container">
+            <div class="logo-wrapper">
+                <img src="img/logo.png" alt="Logo MyBrickStore" class="logo-img">
+            </div>
+            <div class="header-text">
+                <h1>Documentation Technique</h1>
+                <p>Portail centralisé des ressources de développement - Projet SAE</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="grid-wrapper">
+
+            <a href="PHPDoc/index.html" class="doc-card card-php">
+                <div class="card-icon">
+                    <img src="img/php_logo.png" alt="Logo PHP">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Backend & Core</span>
+                    <h2>PHP</h2>
+                    <p>Structure MVC propriétaire (Core, Models, Controllers).</p>
+                    <div class="card-footer">
+                        <span class="btn-link">Consulter &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="https://dbdocs.io/alk.zhabrail/MyBrickStore-DB" target="_blank" rel="noopener noreferrer" class="doc-card card-sql">
+                <div class="card-icon">
+                    <img src="img/sql_logo.png" alt="Logo SQL">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Base de Données</span>
+                    <h2>SQL</h2>
+                    <p>Diagramme relationnel et base de données complète et détaillée.</p>
+                    <div class="card-footer">
+                        <span class="btn-link external">Consulter &rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="JavaDoc/index.html" class="doc-card card-java">
+                <div class="card-icon">
+                    <img src="img/java_logo.png" alt="Logo Java">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Composant Java</span>
+                    <h2>Java</h2>
+                    <p>Pixelisation d'image, appel du pavage, génération d'image LEGO et commande à l'usine.</p>
+                    <div class="card-footer">
+                        <span class="btn-link">Consulter &rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="CDoc/html/index.html" class="doc-card card-c">
+                <div class="card-icon">
+                    <img src="img/c_logo.png" alt="Logo C">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Algorithme de pavage</span>
+                    <h2>C</h2>
+                    <p>Fichiers sources (.h) et structures de données (<code>struct</code>) sur lesquelles reposent les algorithmes de pavage.</p>
+                    <div class="card-footer">
+                        <span class="btn-link">Consulter &rarr;</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> MyBrickStore. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Petit script pour mettre l'année à jour automatiquement
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
